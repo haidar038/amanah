@@ -1,0 +1,73 @@
+@import url("https://fonts.cdnfonts.com/css/forque");
+
+:root {
+    --crimson: #d41a3f;
+    --maroon: #990000;
+    --light-blue: #006cc1;
+    --dark-blue: #0a377b;
+    --yellow: #f8ae01;
+}
+
+* {
+    font-family: "Hanken Grotesk", sans-serif;
+}
+
+html,
+body {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+body {
+    background-color: rgb(250, 249, 246) !important;
+}
+
+.abstract-bg {
+    background: url("../imgs/AbstractBG.png") center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.abstract-bg::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(360deg, rgba(250, 249, 246, 0.5) 0%, rgba(250, 249, 246, 1) 100%);
+}
+
+.image-box__background,
+.image-box__overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.image-box__background {
+    background: var(--image-url) center center no-repeat;
+    background-size: cover;
+    mix-blend-mode: multiply;
+    z-index: 0;
+}
+
+.image-box__overlay {
+    background: rgba(153, 0, 0, 0.75);
+
+    z-index: 1;
+}
+
+.bg-maroon {
+    background-color: var(--maroon);
+}
+
+.title,
+.sub-title {
+    font-family: "FORQUE", sans-serif !important;
+}
+
+.text-crimson {
+    color: var(--crimson);
+}
