@@ -1,129 +1,848 @@
 <!DOCTYPE html>
 <html lang="en" class="light">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="apple-touch-icon" sizes="57x57" href="./src/favicon/apple-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="60x60" href="./src/favicon/apple-icon-60x60.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="./src/favicon/apple-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="./src/favicon/apple-icon-76x76.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="./src/favicon/apple-icon-114x114.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="./src/favicon/apple-icon-120x120.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="./src/favicon/apple-icon-144x144.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="./src/favicon/apple-icon-152x152.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="./src/favicon/apple-icon-180x180.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="./src/favicon/android-icon-192x192.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./src/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="96x96" href="./src/favicon/favicon-96x96.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="./src/favicon/favicon-16x16.png" />
+        <link rel="manifest" href="./src/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+        <meta name="theme-color" content="#ffffff" />
 
-    <link rel="apple-touch-icon" sizes="57x57" href="./src/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="./src/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="./src/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="./src/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="./src/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="./src/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="./src/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="./src/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="./src/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="./src/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./src/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="./src/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./src/favicon/favicon-16x16.png">
-    <link rel="manifest" href="./src/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+        <title>Tauhid - Nasri</title>
 
-    <title>Tauhid - Nasri</title>
+        <link rel="stylesheet" href="./src/css/style.css" />
 
-    <link rel="stylesheet" href="./src/css/style.css">
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+        <link href="https://fonts.cdnfonts.com/css/forque" rel="stylesheet" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
-        integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+            integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/forque" rel="stylesheet">
+        <style>
+            swiper-slide {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        </style>
+    </head>
 
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-</head>
-
-<body class="h-100">
-    <nav class="navbar navbar-expand-lg bg-white">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="./src/imgs/AMANAH_LOGO.png" alt="" class="img-fluid" style="max-height: 35px;">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav m-auto mb-2 mb-lg-0 gap-3">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Tentang</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Karir</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Visi, Misi & Program</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Aktivitas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Kontak</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav mb-2 mb-lg-0 gap-2 flex-row">
-                    <li class="nav-item">
-                        <a class="nav-link text-light rounded-circle px-2 py-1 py-lg-1"
-                            style="background-color: #D41A3F;" href="#">
-                            <i class="bi bi-facebook"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light rounded-circle px-2 py-1 py-lg-1"
-                            style="background-color: #D41A3F;" href="#">
-                            <i class="bi bi-instagram"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light rounded-circle px-2 py-1 py-lg-1"
-                            style="background-color: #D41A3F;" href="#">
-                            <i class="bi bi-tiktok"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <header>
-        <div class="row mx-0 d-none d-lg-flex">
-            <div class="col-12 col-lg-6 d-flex justify-content-center bg-maroon position-relative pt-5">
-                <div class="image-box__background d-none d-lg-block"
-                    style="--image-url: url(https://theworldtravelguy.com/wp-content/uploads/2024/09/DJI_0766_1200-4.jpg)">
+    <body class="h-100">
+        <header>
+            <nav class="navbar navbar-expand-lg bg-white">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="./src/imgs/AMANAH_LOGO.png" alt="" class="img-fluid" style="max-height: 35px" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav m-auto mb-3 mb-lg-0 gap-3">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#tentang">Tentang</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#karir">Karir</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#visi-misi">Visi, Misi & Program</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#aktivitas">Aktivitas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#kontak">Kontak</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav mb-2 mb-lg-0 gap-2 flex-row">
+                            <li class="nav-item">
+                                <a class="nav-link text-light rounded-circle px-2 py-1 py-lg-1" target="_blank" style="background-color: #d41a3f" href="https://www.facebook.com/profile.php?id=61555734137233">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light rounded-circle px-2 py-1 py-lg-1" target="_blank" style="background-color: #d41a3f" href="https://www.instagram.com/walikotakita">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light rounded-circle px-2 py-1 py-lg-1" target="_blank" style="background-color: #d41a3f" href="https://www.tiktok.com/@walikotakita">
+                                    <i class="bi bi-tiktok"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="image-box__overlay"></div>
-                <img src="./src/imgs/Tauhid-Nasri-2.png" class="img-fluid z-2" alt="">
-            </div>
-            <div class="col-12 col-lg-6 abstract-bg d-flex flex-column justify-content-between align-items-center pt-5">
-                <img src="./src/imgs/Nomor 2.png" class="z-1" alt="">
-                <div class="text-center z-1 lh-1">
-                    <div class="title display-2 m-0">PILIH YANG</div>
-                    <div class="title display-1 mb-3 text-crimson">"AMANAH"</div>
-                    <div class="title fs-4">MOHAMMAD TAUHID SOLEMAN | NASRI ABUBAKAR</div>
-                    <div class="title">CALON WALIKOTA & WAKIL WALIKOTA TERNATE 2024-2029</div>
+            </nav>
+
+            <div class="row mx-0 d-none d-lg-flex">
+                <div class="col-12 col-lg-6 d-flex justify-content-center bg-maroon position-relative pt-5">
+                    <div class="image-box__background d-none d-lg-block" style="--image-url: url(https://theworldtravelguy.com/wp-content/uploads/2024/09/DJI_0766_1200-4.jpg)"></div>
+                    <div class="image-box__overlay"></div>
+                    <img src="./src/imgs/Tauhid-Nasri-2.png" class="img-fluid z-2" alt="" />
                 </div>
-                <img src="./src/imgs/Supergraphic.png" alt="" class="w-50 z-1">
+                <div class="col-12 col-lg-6 abstract-bg d-flex flex-column justify-content-between align-items-center pt-5">
+                    <img src="./src/imgs/Nomor 2.png" class="z-1" alt="" />
+                    <div class="text-center z-1 lh-1">
+                        <div class="title display-2 m-0">PILIH YANG</div>
+                        <div class="title display-1 mb-3 text-crimson">"AMANAH"</div>
+                        <div class="title fs-4">MOHAMMAD TAUHID SOLEMAN | NASRI ABUBAKAR</div>
+                        <div class="title">CALON WALIKOTA & WAKIL WALIKOTA TERNATE 2024-2029</div>
+                    </div>
+                    <img src="./src/imgs/Supergraphic.png" alt="" class="w-50 z-1" />
+                </div>
             </div>
-    </header>
 
+            <!-- Mobile version -->
+            <div class="container">
+                <div class="d-block d-lg-none abstract-bg-4 position-relative">
+                    <div class="text-center">
+                        <img src="./src/imgs/Nomor 2_2.png" class="z-2 mb-5" alt="" style="max-width: 152px" />
+                        <div class="text-center z-1 lh-1">
+                            <h1 class="title text-maroon" style="font-size: 48pt">"AMANAH"</h1>
+                            <div class="title fs-5">MOHAMMAD TAUHID SOLEMAN | NASRI ABUBAKAR</div>
+                        </div>
+                        <img src="./src/imgs/Tauhid-Nasri-2.png" class="img-fluid" alt="" />
+                    </div>
+                </div>
+            </div>
+        </header>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-</body>
+        <main>
+            <section class="abstract-bg-2" id="tentang">
+                <div class="container py-5">
+                    <h3 class="sub-title text-yellow mb-4 text-center text-uppercase">Tentang Kami</h3>
+                    <div class="row">
+                        <div class="col-12 col-lg-6 mb-5 mb-lg-0">
+                            <div class="row">
+                                <div class="col-12 col-lg-6 d-lg-block d-flex justify-content-center mb-3 mb-lg-0">
+                                    <img src="./src/imgs/tauhid-bg-y.png" class="img-fluid" alt="" />
+                                </div>
+                                <div class="col-12 col-lg-6 text-light">
+                                    <p class="text-yellow fw-bold text-center text-lg-start">Mohammad Tauhid Soleman</p>
+                                    <p class="small">
+                                        M. Tauhid Soleman, sebagai figur yang sederhana dalam perjalanan karir di pemerintahan sosoknya yang sudah banyak memberikan kontirbusi terhadap kota Ternate dari pembangunan daerah, hingga
+                                        mendapatkan penghargaan dari beberapa kementerian atas kinerjanya sebagai Walikota Ternate.
+                                    </p>
+                                    <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#tauhidModal">Lihat lebih banyak</button>
+                                </div>
+                            </div>
 
+                            <!-- Modal -->
+                            <div class="modal fade" id="tauhidModal" tabindex="-1" aria-labelledby="tauhidModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                    <div class="modal-content rounded-0">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="tauhidModalLabel">Mohammad Tauhid Soleman</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                <strong>Dr. M. Tauhid Soleman, M.Si</strong> (lahir 13 Februari 1970), adalah Wali Kota Ternate periode 2021-2024. Menjabat sejak 26 April 2021, menjadi sebagai figur yang sederhana dalam
+                                                perjalanan karir di pemerintahan sosoknya yang sudah banyak memberikan kontirbusi terhadap kota Ternate dari pembangunan daerah, hingga mendapatkan penghargaan dari beberapa kementerian atas
+                                                kinerjanya sebagai Walikota Ternate.
+                                            </p>
+                                            <h5 class="fw-bold text-dark-blue">Pendidikan</h5>
+                                            <div class="timeline">
+                                                <div class="timeline-item">
+                                                    <div class="timeline-content">
+                                                        <h6 class="timeline-title fw-bold">1978 - 1983</h6>
+                                                        <p class="timeline-text">Sekolah Dasar Subsidi Islamiyah 1 Ternate</p>
+                                                    </div>
+                                                </div>
+                                                <div class="timeline-item">
+                                                    <div class="timeline-content">
+                                                        <h6 class="timeline-title fw-bold">1983 - 1986</h6>
+                                                        <p class="timeline-text">Sekolah Menengah Pertama Negeri 4 Ternate</p>
+                                                    </div>
+                                                </div>
+                                                <div class="timeline-item">
+                                                    <div class="timeline-content">
+                                                        <h6 class="timeline-title fw-bold">1986 - 1989</h6>
+                                                        <p class="timeline-text">Sekolah Menengah Atas Negeri 1 Ternate</p>
+                                                    </div>
+                                                </div>
+                                                <div class="timeline-item">
+                                                    <div class="timeline-content">
+                                                        <h6 class="timeline-title fw-bold">1989 - 1992</h6>
+                                                        <p class="timeline-text">Diploma STPDN Bandung</p>
+                                                    </div>
+                                                </div>
+                                                <div class="timeline-item">
+                                                    <div class="timeline-content">
+                                                        <h6 class="timeline-title fw-bold">1994 - 1998</h6>
+                                                        <p class="timeline-text">S-1 Institut Ilmu Pemerintahan Jakarta</p>
+                                                    </div>
+                                                </div>
+                                                <div class="timeline-item">
+                                                    <div class="timeline-content">
+                                                        <h6 class="timeline-title fw-bold">1999 - 2002</h6>
+                                                        <p class="timeline-text">S-2 Universitas Padjajaran</p>
+                                                    </div>
+                                                </div>
+                                                <div class="timeline-item">
+                                                    <div class="timeline-content">
+                                                        <h6 class="timeline-title fw-bold">2012 - 2016</h6>
+                                                        <p class="timeline-text">S-3 Universitas Muslim Indonesia</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <h5 class="fw-bold text-dark-blue">Quotes</h5>
+                                            <div class="card mb-3">
+                                                <div class="card-body">
+                                                    <figure class="mb-0 text-light-blue">
+                                                        <blockquote class="blockquote">
+                                                            <p>"Saya lebih suka memiliki sedikit dan melihat dunia, daripada memiliki dunia dan melihat sedikit darinya."</p>
+                                                        </blockquote>
+                                                        <figcaption class="blockquote-footer mb-0">Alexander Sattler</figcaption>
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                            <div class="card mb-3">
+                                                <div class="card-body">
+                                                    <figure class="mb-0 text-light-blue">
+                                                        <blockquote class="blockquote">
+                                                            <p>"Tidak apa-apa untuk merayakan kesuksesan, tapi lebih penting untuk memperhatikan pelajaran tentang kegagalan."</p>
+                                                        </blockquote>
+                                                        <figcaption class="blockquote-footer mb-0">Bill Gates</figcaption>
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                            <div class="card mb-3">
+                                                <div class="card-body">
+                                                    <figure class="mb-0 text-light-blue">
+                                                        <blockquote class="blockquote">
+                                                            <p>"Tuntutlah ilmu, disaat kamu miskin, ia akan menjadi hartamu. Disaat kamu kaya, ia akan menjadi perhiasanmu."</p>
+                                                        </blockquote>
+                                                        <figcaption class="blockquote-footer mb-0">Luqman Al-Hakim</figcaption>
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="row">
+                                <div class="col-12 col-lg-6 d-lg-block d-flex justify-content-center mb-3 mb-lg-0">
+                                    <img src="./src/imgs/nasri-bg-y.png" class="img-fluid" alt="" />
+                                </div>
+                                <div class="col-12 col-lg-6 text-light">
+                                    <p class="text-yellow fw-bold text-center text-lg-start">Nasri Abubakar</p>
+                                    <p class="small">
+                                        Nasri Abubakar, pengusaha dan tokoh masyarakat Maluku Utara, pernah menjabat sebagai direktur di beberapa perusahaan energi. Aktif di organisasi pemuda dan olahraga, yang juga pernah menjadi ketua
+                                        harian Pertina Maluku Utara. Saat ini, ia menjadi Bendahara Umum Partai Demokrat Maluku Utara.
+                                    </p>
+                                    <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#nasriModal">Lihat lebih banyak</button>
+                                </div>
+                            </div>
+
+                            <div class="modal fade" id="nasriModal" tabindex="-1" aria-labelledby="nasriModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                    <div class="modal-content rounded-0">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="nasriModalLabel">Nasri Abubakar</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                <strong>Nasri Abubakar</strong> (lahir 18 November 1968), adalah pengusaha dan tokoh masyarakat Maluku Utara, pernah menjabat sebagai direktur di beberapa perusahaan energi. Aktif di
+                                                organisasi pemuda dan olahraga, yang juga pernah menjadi ketua harian Pertina Maluku Utara. Saat ini, ia menjadi Bendahara Umum Partai Demokrat Maluku Utara. .
+                                            </p>
+                                            <h5 class="fw-bold text-dark-blue">Pendidikan</h5>
+                                            <div class="timeline">
+                                                <div class="timeline-item">
+                                                    <div class="timeline-content">
+                                                        <h6 class="timeline-title fw-bold">1975 - 1982</h6>
+                                                        <p class="timeline-text">Sekolah Dasar Inpres Tanah Tinggi 3</p>
+                                                    </div>
+                                                </div>
+                                                <div class="timeline-item">
+                                                    <div class="timeline-content">
+                                                        <h6 class="timeline-title fw-bold">1982 - 1985</h6>
+                                                        <p class="timeline-text">Sekolah Menengah Pertama Negeri 1 Ternate</p>
+                                                    </div>
+                                                </div>
+                                                <div class="timeline-item">
+                                                    <div class="timeline-content">
+                                                        <h6 class="timeline-title fw-bold">1985 - 1988</h6>
+                                                        <p class="timeline-text">Sekolah Menengah Atas Negeri 1 Ternate</p>
+                                                    </div>
+                                                </div>
+                                                <div class="timeline-item">
+                                                    <div class="timeline-content">
+                                                        <h6 class="timeline-title fw-bold">1988 - 1993</h6>
+                                                        <p class="timeline-text">S-1 Universitas Muslim Indonesia Makassar</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <h5 class="fw-bold text-dark-blue">Quotes</h5>
+                                            <div class="card mb-3">
+                                                <div class="card-body">
+                                                    <figure class="mb-0 text-light-blue">
+                                                        <blockquote class="blockquote">
+                                                            <p>"Jangan pernah takut menjadi apapun dan siapapun, setidaknya usaha dan kerja keras anda hari ini memberikan peluang masa depan yang lebih baik."</p>
+                                                        </blockquote>
+                                                        <figcaption class="blockquote-footer mb-0">Nasri Abubakar</figcaption>
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="karir">
+                <div class="container py-5">
+                    <h3 class="sub-title text-crimson mb-4 text-center text-uppercase">Rekam Jejak</h3>
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <div class="w-100 p-3 h5 bg-light-blue text-white fw-bold">Mohammad Tauhid Soleman</div>
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-content">
+                                        <h5 class="timeline-title fw-bold">1992 - 1994</h5>
+                                        <p class="timeline-text">PAMA Kota (Perwira Pertama) 0822 Bondowoso</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-content">
+                                        <h5 class="timeline-title fw-bold">1994 - 1996</h5>
+                                        <p class="timeline-text">Kepala Kota Kelurahan Gamalama Ternate</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-content">
+                                        <h5 class="timeline-title fw-bold">1996 - 2000</h5>
+                                        <p class="timeline-text">Sekretaris Kota Camat Selatan</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-content">
+                                        <h5 class="timeline-title fw-bold">2003 - 2007</h5>
+                                        <p class="timeline-text">Camat Kota Selatan</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-content">
+                                        <h5 class="timeline-title fw-bold">2007 - 2011</h5>
+                                        <p class="timeline-text">Kepala Kota Bagian Pemerintahan Ternate</p>
+                                        <p class="timeline-text">Kepala Pemberdayaan Masyarakat Kota Ternate</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-content">
+                                        <h5 class="timeline-title fw-bold">2011 - 2012</h5>
+                                        <p class="timeline-text">Kepala Kota Dinas Pendapatan, Pengelolaan Keuangan dan Aset Daerah Ternate</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-content">
+                                        <h5 class="timeline-title fw-bold">2013 - 2014</h5>
+                                        <p class="timeline-text">Asisten Kota Tata Praja Setda Ternate</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-content">
+                                        <h5 class="timeline-title fw-bold">2014 - 2019</h5>
+                                        <p class="timeline-text">Sekretaris Kota Ternate</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-content">
+                                        <h5 class="timeline-title fw-bold">2021 - 2024</h5>
+                                        <p class="timeline-text">Wali Kota Ternate</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="w-100 p-3 h5 bg-light-blue text-white fw-bold">Nasri Abubakar</div>
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-content">
+                                        <h5 class="timeline-title fw-bold">2008 - Sekarang</h5>
+                                        <p class="timeline-text">Direktur PT. HALUTINDO PERKASA ENERGI Halmahera Selatan</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-content">
+                                        <h5 class="timeline-title fw-bold">2010 - Sekarang</h5>
+                                        <p class="timeline-text">Direktur PT. HALUTINDO PERKASA Halmahera Selatan</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-content">
+                                        <h5 class="timeline-title fw-bold">2010 - Sekarang</h5>
+                                        <p class="timeline-text">Ketua Organisasi Pemuda Tanah Tinggi Kota Ternate</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-content">
+                                        <h5 class="timeline-title fw-bold">2016 - 2020</h5>
+                                        <p class="timeline-text">Ketua Harian Persatuan Tinju Amatir Indonesia Halmahera Utara</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-content">
+                                        <h5 class="timeline-title fw-bold">2017 - Sekarang</h5>
+                                        <p class="timeline-text">Ketua DPC HISWANA MIGAS Maluku Utara</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-content">
+                                        <h5 class="timeline-title fw-bold">2018 - 2022</h5>
+                                        <p class="timeline-text">Ketua Bidang Promosi dan Dana KONI Maluku Utara</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-content">
+                                        <h5 class="timeline-title fw-bold">2019 - Sekarang</h5>
+                                        <p class="timeline-text">Direktur PT. SINERGI DHARMA NEGERI Halmahera Selatan</p>
+                                        <p class="timeline-text">Komisaris CV. DANY PUTRA PRATAMA Halmahera Selatan</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-content">
+                                        <h5 class="timeline-title fw-bold">2020 - Sekarang</h5>
+                                        <p class="timeline-text">Komisaris CV. RIMBA HALMAHERA ENERGI</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-content">
+                                        <h5 class="timeline-title fw-bold">2022 - Sekarang</h5>
+                                        <p class="timeline-text">Ketua Bidang Pembinaan Prestasi KONI Maluku Utara</p>
+                                        <p class="timeline-text">Bendahara Umum DPD Partai Demokrat Provinsi Maluku Utara</p>
+                                    </div>
+                                </div>
+                                <!-- Add more timeline items for Nasri Abubakar -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Visi, Misi dan Program -->
+            <section class="visimisi" id="visi-misi">
+                <div class="container py-5">
+                    <h3 class="sub-title text-white mb-4 text-center text-uppercase">VISI, MISI & PROGRAM</h3>
+
+                    <div class="row mb-3">
+                        <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="text-center fw-bold">Visi</h4>
+                                    <p class="fw-bold">Ternate ANDALAN (Ternate Mandiri - Berkeadilan) Jilid II</p>
+                                    <p class="mb-0 fw-bold text-maroon">Ternate Mandiri</p>
+                                    <p>
+                                        Ternate Mandiri Seacara Ekonomi; Untuk Hadir Sebagai solusi dalam mengelola sumber daya dan menciptakan lapangan kerja. Selain ekonomi, kemandirian dalam menciptakan tata kelola pemerintahan yang
+                                        profesional, sesuai dengan kebutuhan.
+                                    </p>
+                                    <p>
+                                        Bersama Bakal Calon Wakil Walikota Ternate, <strong>Nasri Abubakar</strong> bertekad melanjutkan Visi <strong>Ternate Andalan</strong> untuk Session Kedua,
+                                        <strong class="text-maroon">“Lanjutkan Visi, Konkretkan Misi”</strong>
+                                    </p>
+                                    <p class="mb-0 fw-bold text-maroon">Ternate Berkeadilan</p>
+                                    <p>Ternate Berkeadilan Menciptakan keadilan pada multi sektor (ekonomi, sosial, pendidikan, kesehatan, infrastruktur, hak pelayanan hukum, dan kebudayaan)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="text-center fw-bold">Misi</h4>
+                                    <ol>
+                                        <li class="fw-bold">Menumbuh-kembangkan Kelembagaan Sosial dalam Bingkai 7 Nilai Dasar Kebudayaan Ternate (Kie Se Gam Magogugu Matiti Tomdi).</li>
+                                        <li>Membangun Zona Ekonomi Baru di kawasan Utara dan Selatan Kota Ternate.</li>
+                                        <li class="fw-bold">Mewujudkan Kualitas Sumber Daya Manusia Yang Unggul dan Berdaya Saing.</li>
+                                        <li>Meningkatkan Tata Kelola Pemerintahan Yang Responsif, Bersih, Transparan, dan Akuntabel Yang Berorientasi Pada Pelayanan Publik.</li>
+                                        <li class="fw-bold">Menciptakan Kemandirian Ekonomi Masyarakat Yang Tangguh dan Unggul Berbasis Kepulauan.</li>
+                                        <li>Mewujudkan Pengelolaan Sumber Daya Alam dan Lingkungan Hidup secara berkelanjutan, Asri dan Lestari.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr style="height: 2px; border: none; color: #fff; background-color: #fff" />
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="text-center sub-title text-light text-uppercase">18 Program Prioritas</h3>
+                            <ol class="text-light">
+                                <li>Penguatan komoditas City Branding Ternate Kota Rempah dan Pusat pengembangan ekonomi atau kawasan strategis berbasis kepulauan serta peningkatan kemandirian ekonomi.</li>
+                                <li>Pengembangan iklim usaha yang kondusif serta peningkatan daya saing industri Kreatif, UMKM dan IKM.</li>
+                                <li>Pengembangan kawasan strategis sebagai pusat pertumbuhan ekonomi baru di kawasan Utara dan Selatan Kota Ternate.</li>
+                                <li>Peningkatan infrastruktur dasar pada wilayah Moti, Hiri dan Batang Dua.</li>
+                                <li>Menghadirkan kemudahan dan keadilan bagi masyarakat Moti, Hiri, dan Batang Dua dalam memperoleh Energi (khususnya Energi BBM).</li>
+                                <li>Penerapan penggunaan material pengganti bahan bangunan untuk menjaga kelestarian dan keberlanjutan lingkungan hidup.</li>
+                                <li>Optimalisasi jaminan perlindungan tenaga kerja dan kesejahteraan Pekerja Rentan.</li>
+                                <li>Peningkatan pengolahan sampah secara partisipatif dan konservasi sumber daya air.</li>
+                                <li>Literasi dan Mitigasi kebencanaan.</li>
+                                <li>Revitalisasi dan penguatan peran BUMD</li>
+                                <li>Membangun dan menghidupkan entitas keragaman sosial budaya masyarakat.</li>
+                                <li>Peningkatan kapasitas dan kapabilitas Sumber Daya Manusia yang unggul, berkarakter, dan berdaya saing.</li>
+                                <li>Peningkatan kapabilitas kaum disabilitas melalui pemberdayaan berbasis kewirausahaan.</li>
+                                <li>Revitalisasi dan penataan pola ruang kota yang berkelanjutan</li>
+                                <li>Optimalisasi sumber-sumber penerimaan daerah.</li>
+                                <li>Peningkatan kualitas pelayanan publik dan Pembinaan Aparatur Sipil Negara (ASN) yang profesional</li>
+                                <li>Peningkatan kapasitas kepemudaan dan keolahragaan yang berkarakter, berkualitas dan berdaya saing.</li>
+                                <li>Perlindungan dan pelestarian Cagar Budaya.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Aktivitas -->
+            <section id="aktivitas">
+                <div class="container py-5">
+                    <h3 class="text-center text-crimson text-uppercase sub-title mb-4">Aktivitas</h3>
+                    <swiper-container init="false">
+                        <swiper-slide>
+                            <div class="card rounded-0 border-0" style="width: 18rem">
+                                <div class="ratio ratio-1x1 object-fit-cover">
+                                    <img src="./src/imgs/gallery/act_walikota.jpg" class="img-fluid object-fit-cover" alt="..." />
+                                </div>
+                                <div class="card-body bg-crimson text-light">
+                                    <p class="card-text small">Peringatan Puncak Hari Air Dunia Yang ke 30</p>
+                                    <p class="card-text small text-end text-yellow">30 Maret 2022</p>
+                                </div>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div class="card rounded-0 border-0" style="width: 18rem">
+                                <div class="ratio ratio-1x1 object-fit-cover">
+                                    <img src="./src/imgs/gallery/act_walikota1.png" class="img-fluid object-fit-cover" alt="..." />
+                                </div>
+                                <div class="card-body bg-crimson text-light">
+                                    <p class="card-text small">Berbagi Takjil dengan Masyarakat Perkotaan</p>
+                                    <p class="card-text small text-end text-yellow">12 April 2023</p>
+                                </div>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div class="card rounded-0 border-0" style="width: 18rem">
+                                <div class="ratio ratio-1x1 object-fit-cover">
+                                    <img src="./src/imgs/gallery/act_walikota2.png" class="img-fluid object-fit-cover" alt="..." />
+                                </div>
+                                <div class="card-body bg-crimson text-light">
+                                    <p class="card-text small">Dukungan Program Akademi Wirausaha Maluku Utara</p>
+                                    <p class="card-text small text-end text-yellow">13 Februari 2023</p>
+                                </div>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div class="card rounded-0 border-0" style="width: 18rem">
+                                <div class="ratio ratio-1x1 object-fit-cover">
+                                    <img src="./src/imgs/gallery/act_walikota9.jpg" class="img-fluid object-fit-cover" alt="..." />
+                                </div>
+                                <div class="card-body bg-crimson text-light">
+                                    <p class="card-text small">Peneriman Anugerah Golden SIWO PWI Award 2023</p>
+                                    <p class="card-text small text-end text-yellow">28 Agustus 2023</p>
+                                </div>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div class="card rounded-0 border-0" style="width: 18rem">
+                                <div class="ratio ratio-1x1 object-fit-cover">
+                                    <img src="./src/imgs/gallery/act_walikota5.jpg" class="img-fluid object-fit-cover" alt="..." />
+                                </div>
+                                <div class="card-body bg-crimson text-light">
+                                    <p class="card-text small">Ramah Tamah dan Gala Dinner Semarak HUT RI Ke-78</p>
+                                    <p class="card-text small text-end text-yellow">19 Agustus 2023</p>
+                                </div>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div class="card rounded-0 border-0" style="width: 18rem">
+                                <div class="ratio ratio-1x1 object-fit-cover">
+                                    <img src="./src/imgs/gallery/act_walikota10.jpg" class="img-fluid object-fit-cover" alt="..." />
+                                </div>
+                                <div class="card-body bg-crimson text-light">
+                                    <p class="card-text small">Deklarasi Rumah Ibadah Ramah Anak Se-Kota Ternate</p>
+                                    <p class="card-text small text-end text-yellow">24 November 2023</p>
+                                </div>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div class="card rounded-0 border-0" style="width: 18rem">
+                                <div class="ratio ratio-1x1 object-fit-cover">
+                                    <img src="./src/imgs/gallery/act_walikota7.jpg" class="img-fluid object-fit-cover" alt="..." />
+                                </div>
+                                <div class="card-body bg-crimson text-light">
+                                    <p class="card-text small">Aksi Nyata Mewujudkan Program Ternate Bersih</p>
+                                    <p class="card-text small text-end text-yellow">26 April 2023</p>
+                                </div>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div class="card rounded-0 border-0" style="width: 18rem">
+                                <div class="ratio ratio-1x1 object-fit-cover">
+                                    <img src="./src/imgs/gallery/act_walikota8.jpg" class="img-fluid object-fit-cover" alt="..." />
+                                </div>
+                                <div class="card-body bg-crimson text-light">
+                                    <p class="card-text small">Berbincang Sembari Meresapi aspirasi warga pulau Hiri.</p>
+                                    <p class="card-text small text-end text-yellow">2023</p>
+                                </div>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div class="card rounded-0 border-0" style="width: 18rem">
+                                <div class="ratio ratio-1x1 object-fit-cover">
+                                    <img src="./src/imgs/gallery/act_walikota11.jpg" class="img-fluid object-fit-cover" alt="..." />
+                                </div>
+                                <div class="card-body bg-crimson text-light">
+                                    <p class="card-text small">Bersama Pemuka Agama dan Tokoh Adat Saat Kunjungan Ke Pulau Moti</p>
+                                    <p class="card-text small text-end text-yellow">2023</p>
+                                </div>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div class="card rounded-0 border-0" style="width: 18rem">
+                                <div class="ratio ratio-1x1 object-fit-cover">
+                                    <img src="./src/imgs/gallery/act_walikota12.jpg" class="img-fluid object-fit-cover" alt="..." />
+                                </div>
+                                <div class="card-body bg-crimson text-light">
+                                    <p class="card-text small">Foto Bersama dengan Anggota Pramuka di Depan Kantor Walikota</p>
+                                    <p class="card-text small text-end text-yellow">1 September 2023</p>
+                                </div>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div class="card rounded-0 border-0" style="width: 18rem">
+                                <div class="ratio ratio-1x1 object-fit-cover">
+                                    <img src="./src/imgs/gallery/act_walikota13.jpg" class="img-fluid object-fit-cover" alt="..." />
+                                </div>
+                                <div class="card-body bg-crimson text-light">
+                                    <p class="card-text small">Peringatan Hari Anak Nasional Tingkat Kota Ternate</p>
+                                    <p class="card-text small text-end text-yellow">29 Juli 2023</p>
+                                </div>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div class="card rounded-0 border-0" style="width: 18rem">
+                                <div class="ratio ratio-1x1 object-fit-cover">
+                                    <img src="./src/imgs/gallery/act_walikota14.jpg" class="img-fluid object-fit-cover" alt="..." />
+                                </div>
+                                <div class="card-body bg-crimson text-light">
+                                    <p class="card-text small">Diskusi Langsung Bersama Warga di Program FORIS Andalan.</p>
+                                    <p class="card-text small text-end text-yellow">5 September 2022</p>
+                                </div>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div class="card rounded-0 border-0" style="width: 18rem">
+                                <div class="ratio ratio-1x1 object-fit-cover">
+                                    <img src="./src/imgs/gallery/act_walikota15.jpg" class="img-fluid object-fit-cover" alt="..." />
+                                </div>
+                                <div class="card-body bg-crimson text-light">
+                                    <p class="card-text small">Kolaborasi Bersama Masyarakat di Aksi Bela Palestina</p>
+                                    <p class="card-text small text-end text-yellow">3 Desember 2023</p>
+                                </div>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div class="card rounded-0 border-0" style="width: 18rem">
+                                <div class="ratio ratio-1x1 object-fit-cover">
+                                    <img src="./src/imgs/gallery/act_walikota16.jpg" class="img-fluid object-fit-cover" alt="..." />
+                                </div>
+                                <div class="card-body bg-crimson text-light">
+                                    <p class="card-text small">Bersama Kontingen Tinju Remaja Kota Ternate</p>
+                                    <p class="card-text small text-end text-yellow">2 Juni 2023</p>
+                                </div>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div class="card rounded-0 border-0" style="width: 18rem">
+                                <div class="ratio ratio-1x1 object-fit-cover">
+                                    <img src="./src/imgs/gallery/act_walikota17.jpg" class="img-fluid object-fit-cover" alt="..." />
+                                </div>
+                                <div class="card-body bg-crimson text-light">
+                                    <p class="card-text small">Rombongan Walikota Berkunjung Ke Pulau Batang Dua</p>
+                                    <p class="card-text small text-end text-yellow">17 Januari 2024</p>
+                                </div>
+                            </div>
+                        </swiper-slide>
+                    </swiper-container>
+                </div>
+            </section>
+
+            <section>
+                <div class="container pt-3 pb-5">
+                    <div class="row">
+                        <h3 class="text-center text-crimson text-uppercase sub-title mb-4">Kekuatan Untuk Perubahan</h3>
+                        <div class="col">
+                            <div class="card card-body">
+                                <!-- Logo partai (NASDEM, DEMOKRAT, PDIP, HANURA) -->
+                                <div class="row">
+                                    <div class="col-6 col-lg-3 mb-3 mb-lg-0 d-flex justify-content-center align-items-center">
+                                        <img src="./src/imgs/logo-partai/NASDEM.png" class="img-fluid" alt="" />
+                                    </div>
+                                    <div class="col-6 col-lg-3 mb-3 mb-lg-0 d-flex justify-content-center align-items-center">
+                                        <img src="./src/imgs/logo-partai/DEMOKRAT.png" class="img-fluid" alt="" />
+                                    </div>
+                                    <div class="col-6 col-lg-3 mb-3 mb-lg-0 d-flex justify-content-center align-items-center">
+                                        <img src="./src/imgs/logo-partai/PDIP.png" class="img-fluid" alt="" />
+                                    </div>
+                                    <div class="col-6 col-lg-3 mb-3 mb-lg-0 d-flex justify-content-center align-items-center">
+                                        <img src="./src/imgs/logo-partai/HANURA.png" class="img-fluid" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <img src="./src/imgs/Supergraphic.png" class="img-fluid supergraph w-50" alt="" />
+                </div>
+            </section>
+
+            <!-- Contact -->
+            <section class="abstract-bg-3" id="kontak">
+                <div class="container py-5 position-relative">
+                    <h3 class="text-center text-white text-uppercase sub-title mb-4">Terhubung Dengan Kami</h3>
+                    <div class="row mb-3">
+                        <div class="col-12 col-lg-6">
+                            <p class="text-white">Mari <strong>berdialog</strong> dan <strong>bangun kota ini bersama</strong>. Hubungi kami untuk berbagi <strong>aspirasi</strong> dan dukungan Anda.</p>
+                            <div class="card rounded-0 border-0">
+                                <div class="card-body">
+                                    <form action="https://formspree.io/f/xvoeyjzz" method="post">
+                                        <div class="mb-3">
+                                            <label for="nama" class="form-label">Nama</label>
+                                            <input type="text" class="form-control rounded-0 border-top-0 border-start-0 border-end-0 bg-off-white border-bottom-crimson" id="nama" name="nama" placeholder="contoh: Haidar" required />
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="email" class="form-label">Email</label>
+                                            <input
+                                                type="email"
+                                                class="form-control rounded-0 border-top-0 border-start-0 border-end-0 bg-off-white border-bottom-crimson"
+                                                id="email"
+                                                name="email"
+                                                placeholder="contoh: name@example.com"
+                                                required
+                                            />
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="komentar" class="form-label">Pesan</label>
+                                            <textarea class="form-control rounded-0 border-top-0 border-start-0 border-end-0 bg-off-white border-bottom-crimson" id="komentar" rows="3" name="komentar" required></textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn-crimson rounded-0 float-lg-end">Kirim <i class="fas fa-paper-plane"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 d-lg-flex justify-content-center d-none">
+                            <img src="./src/imgs/contact-img.png" alt="" class="contact-img h-75 position-absolute bottom-0" />
+                        </div>
+                    </div>
+                    <ul class="navbar-nav gap-3 flex-row">
+                        <li>
+                            <div class="nav-item">
+                                <a href="https://www.facebook.com/profile.php?id=61555734137233" target="_blank" class="nav-link text-light">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-item">
+                                <a href="https://www.instagram.com/walikotakita" target="_blank" class="nav-link text-light">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-item">
+                                <a href="https://www.tiktok.com/@walikotakita" target="_blank" class="nav-link text-light">
+                                    <i class="bi bi-tiktok"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-item">
+                                <a href="walikotakita.com" class="nav-link text-light"> walikotakita.com </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-dark-blue">
+            <div class="container py-3">
+                <div class="text-center small text-white opacity-50">Walikotakta &copy; 2024 | All Right Reserved</div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+        <script>
+            // pagination="true" pagination-clickable="true" navigation="true" space-between="16" watch-slides-progress="true" centered-slides="true" slides-per-view="4" loop="true"
+            const swiperEl = document.querySelector('swiper-container');
+            Object.assign(swiperEl, {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                pagination: {
+                    clickable: true,
+                },
+                navigation: true,
+                watchSlidesProgress: true,
+                centeredSlides: true,
+                loop: true,
+                breakpoints: {
+                    640: {
+                        slidesPerView: 2,
+                        spaceBetween: 12,
+                    },
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 24,
+                    },
+                    1024: {
+                        slidesPerView: 4,
+                        spaceBetween: 32,
+                    },
+                },
+            });
+            swiperEl.initialize();
+        </script>
+    </body>
 </html>
